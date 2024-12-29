@@ -17,7 +17,7 @@ dog3 = Dog("Chilly")
 dog3.age = 2
 
 print(dog1.name)
-print(dog2.name)
+print(dog2.name) 
 print(dog3.name,dog3.age)
 
 

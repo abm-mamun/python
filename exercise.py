@@ -1,22 +1,8 @@
-print("before")
+#Print the Sum of a Current Number and a Previous number
 
-try:
-    4 / 0
-    #print(name)
-except NameError:
-    print("This was a name issue")
-except ZeroDivisionError:
-    print("can't divide by zero")
-except:
-    print("Something went wrong")
+previous_num = 0
 
-class CheeseError(Exception):
-    pass
-
-def upper_fun(word):
-    if len(word) <= 0:
-        raise CheeseError("Thhe word has to have atleast one letter!")
-    return word.upper()
-
-print(upper_fun(""))
-print("after") 
+for i in range(1,11):
+    x_sum = previous_num + 1
+    print("Current Number ", i, "Previous Number ", previous_num, "Sum: ", x_sum)
+    previous_num = i
